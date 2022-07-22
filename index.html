@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shoe Company</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="hero-image"></div>
+        <header>
+            <a href="#" class="logo">Shoe<span>Brand</span></a>
+            <nav>
+                <svg class="close" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.1676 7.16756C7.42154 6.91369 7.76592 6.77108 8.125 6.77108C8.48407 6.77108 8.82845 6.91369 9.08239 7.16756L16.25 14.3352L23.4176 7.16756C23.5425 7.03823 23.6919 6.93506 23.8572 6.86409C24.0224 6.79312 24.2001 6.75576 24.3799 6.7542C24.5597 6.75264 24.738 6.7869 24.9044 6.85499C25.0708 6.92308 25.222 7.02363 25.3492 7.15078C25.4763 7.27792 25.5769 7.42912 25.645 7.59554C25.7131 7.76196 25.7473 7.94028 25.7458 8.12008C25.7442 8.29989 25.7068 8.47758 25.6359 8.6428C25.5649 8.80801 25.4617 8.95744 25.3324 9.08235L18.1648 16.25L25.3324 23.4176C25.5791 23.673 25.7156 24.015 25.7125 24.3701C25.7094 24.7251 25.567 25.0648 25.3159 25.3159C25.0648 25.5669 24.7252 25.7093 24.3701 25.7124C24.0151 25.7155 23.673 25.579 23.4176 25.3324L16.25 18.1647L9.08239 25.3324C8.82699 25.579 8.48493 25.7155 8.12987 25.7124C7.77481 25.7093 7.43517 25.5669 7.1841 25.3159C6.93302 25.0648 6.79061 24.7251 6.78752 24.3701C6.78443 24.015 6.92093 23.673 7.1676 23.4176L14.3352 16.25L7.1676 9.08235C6.91373 8.82841 6.77112 8.48403 6.77112 8.12496C6.77112 7.76588 6.91373 7.42151 7.1676 7.16756V7.16756Z" fill="black"/>
+                </svg>
+
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">SNEAKERS</a></li>
+                    <li><a href="#">PLAYERS</a></li>
+                </ul>
+            </nav>
+            <svg class="hamburger-menu" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 32H0V26.6667H24V32ZM48 18.6667H0V13.3333H48V18.6667ZM48 5.33333H24V0H48V5.33333Z" fill="white"/>
+            </svg>
+        </header>
+
+        <section class="hero">
+            <h1>Regain your confidence on the court.</h1>
+
+            <p class="subhead">A shoe built with purpose and to take your game to the next level.</p>
+
+            <svg class="down-arrow" viewBox="0 0 16 132" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.29289 131.707C7.68341 132.098 8.31658 132.098 8.7071 131.707L15.0711 125.343C15.4616 124.953 15.4616 124.319 15.0711 123.929C14.6805 123.538 14.0474 123.538 13.6568 123.929L7.99999 129.586L2.34314 123.929C1.95262 123.538 1.31945 123.538 0.928927 123.929C0.538402 124.319 0.538402 124.953 0.928927 125.343L7.29289 131.707ZM7 -4.37114e-08L6.99999 131L8.99999 131L9 4.37114e-08L7 -4.37114e-08Z" fill="black"/>
+            </svg>
+        </section>
+
+        <section class="more-info">
+            <div class="text-image">
+                <div class="info">
+                    <p class="title">Lightweight</p>
+                    <p class="description">Upper mesh material provides proper ventilation and reduction in the weight of the shoes.</p>
+                </div>
+                <img src="assets/shoe2.jpg" alt="Shoe No. 2">
+            </div>
+
+            <div class="text-image reverse">
+                <div class="info">
+                    <p class="title">Flexibility</p>
+                    <p class="description">Soft, flexible soles will allow the walker to push off easily with each step.</p>
+                </div>
+                <img src="assets/shoe3.jpg" alt="Shoe No. 2">
+            </div>
+
+            <div class="text-image">
+                <div class="info">
+                    <p class="title">Durability</p>
+                    <p class="description">Lightweight, woven material is durable and provide structure and support.</p>
+                </div>
+                <img src="assets/shoe4.jpg" alt="Shoe No. 2">
+            </div>
+        </section>
+    </div>
+    <script>
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+        const close = document.querySelector('.close');
+        const nav = document.querySelector('nav');
+
+        hamburgerMenu.addEventListener('click', () => {
+            nav.classList.add('open-nav')
+        })
+        
+        close.addEventListener('click', () => {
+            nav.classList.remove('open-nav')
+        })
+    </script>
+</body>
+</html>
